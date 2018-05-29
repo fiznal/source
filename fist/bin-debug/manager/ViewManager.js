@@ -5,8 +5,13 @@ var ViewManager = (function () {
     function ViewManager() {
     }
     ViewManager.setup = function (params, callBack, thisObj) {
+        alert(xls.viewConfig.getItem(1).viewName);
+        this._viewHashMap = new HashMap();
         //加载所有面板信息
+        // RES.getResByUrl("/resource/xls/json/cn/viewConfig.json", this.onLoadJson, this);
         callBack.call(thisObj);
+    };
+    ViewManager.onLoadJson = function (e) {
     };
     ViewManager.openView = function (panelName, level) {
         //读取json

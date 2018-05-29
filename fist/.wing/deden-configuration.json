@@ -1,0 +1,46 @@
+[
+	{
+		"native_language": "cn",
+		"use_global_mode": false,
+		"ignore_empty": false,
+		"auto_build": false,
+		"namespace": "xls",
+		"resource": "resource/xls/json",
+		"merge_ts": false,
+		"merge_js": true,
+		"source": "D:/workspace/source/fist/excel",
+		"encrypt": false,
+		"encrypt_file": "",
+		"join_lib_to_html": false,
+		"compress_json": false,
+		"obfuscator_lib": false,
+		"language_dictionary": "cn,中文",
+		"out": {
+			"_json": "D:/workspace/source/fist/resource/xls/json",
+			"_ts": "./ts",
+			"_xml": "D:/workspace/source/fist/excel/xml",
+			"_const": "./ts",
+			"_d_ts": "D:/workspace/source/fist/src/typings",
+			"_js": "D:/workspace/source/fist/resource/libs",
+			"language": [
+				"cn"
+			]
+		},
+		"items": {
+			"viewConfig": {
+				"iconPath": "",
+				"constNamespace": "",
+				"name": "viewConfig",
+				"id": 1,
+				"merge": 1,
+				"typeName": "面板配置表",
+				"values": [],
+				"subkey": {},
+				"modification": 1527582707253
+			},
+			"tables": [
+				"viewConfig"
+			]
+		}
+	}
+]

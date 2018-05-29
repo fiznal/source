@@ -68,7 +68,8 @@
     xhr.open('GET', './manifest.json?v=' + Math.random(), true);
     xhr.addEventListener("load", function () {
         var manifest = JSON.parse(xhr.response);
-        var list = manifest.initial.concat(manifest.game);
+        var list = ["resource/libs/XlsModule.js"];
+        list = list.concat(manifest.initial.concat(manifest.game));
         loadScript(list, function () {
             /**
              * {

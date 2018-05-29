@@ -235,6 +235,8 @@ class Main extends egret.DisplayObjectContainer {
     private initManagers():void
     {
         //开始加载管理器
+        this._managerList.push(XMLManager);
+        this._params.push(null);
         this._managerList.push(LevelManager);
         this._params.push(this);
         this._managerList.push(EventManager);

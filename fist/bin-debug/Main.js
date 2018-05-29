@@ -53,7 +53,7 @@ var Main = (function (_super) {
         egret.lifecycle.addLifecycleListener(function (context) {
             // custom lifecycle plugin
             context.onUpdate = function () {
-                console.log('hello,world');
+                // console.log('hello,world')
             };
         });
         egret.lifecycle.onPause = function () {
@@ -63,15 +63,6 @@ var Main = (function (_super) {
             egret.ticker.resume();
         };
         this.initManagers();
-        // RES.getResByUrl('/resource/system/logo.png', this.onLoadLogoComplete, this);
-        //设置加载进度界面
-        //Config to load process interface
-        // this.loadingView = new LoadingUI();
-        // this.stage.addChild(this.loadingView);
-        //初始化Resource资源加载库
-        //initiate Resource loading library
-        // RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        // RES.loadConfig("resource/default.res.json", "resource/");
     };
     Main.prototype.onLoadLogoComplete = function (event) {
         var img = event;
@@ -223,6 +214,8 @@ var Main = (function (_super) {
     };
     Main.prototype.initManagers = function () {
         //开始加载管理器
+        this._managerList.push(XMLManager);
+        this._params.push(null);
         this._managerList.push(LevelManager);
         this._params.push(this);
         this._managerList.push(EventManager);

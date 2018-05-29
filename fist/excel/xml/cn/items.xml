@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+  <viewConfig name="viewConfig" id="1" typeName="面板配置表" subkey="" merge="1" multidimensional="" validation="" htmlField="" constNamespace="" constField="" iconPath="">
+    <Item id="1" viewName="GameStartView" isExml="1"/>
+  </viewConfig>
+</root>

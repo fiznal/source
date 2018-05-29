@@ -1,0 +1,22 @@
+{
+	"viewConfig": {
+		"iconPath": "",
+		"constNamespace": "",
+		"name": "viewConfig",
+		"id": 1,
+		"merge": 1,
+		"typeName": "面板配置表",
+		"values": [
+			{
+				"id": 1,
+				"viewName": "GameStartView",
+				"isExml": 1
+			}
+		],
+		"subkey": {},
+		"modification": 1527582707253
+	},
+	"tables": [
+		"viewConfig"
+	]
+}
