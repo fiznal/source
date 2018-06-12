@@ -1,0 +1,4 @@
+{"file":"GameStart.png","frames":{
+"bg":{"x":0,"y":0,"w":720,"h":1137,"offX":0,"offY":0,"sourceW":720,"sourceH":1137},
+"btn_setting":{"x":804,"y":0,"w":40,"h":19,"offX":2,"offY":7,"sourceW":122,"sourceH":30},
+"btn_start":{"x":722,"y":0,"w":80,"h":20,"offX":2,"offY":6,"sourceW":122,"sourceH":30}}}

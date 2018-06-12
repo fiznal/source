@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameStart" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="GameStart_json.bg" x="-40" y="-81.5"/>
+	<e:Button id="_btnStart" label="Button" x="474" y="714">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GameStart_json.btn_start" source.down="GameStart_json.btn_start"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="_btnSetting" label="Button" x="474" y="766">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GameStart_json.btn_setting" source.down="GameStart_json.btn_setting"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

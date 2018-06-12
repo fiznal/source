@@ -9,12 +9,12 @@
 		"values": [
 			{
 				"id": 1,
-				"viewName": "GameStartView",
+				"viewName": "GameStart",
 				"isExml": 1
 			}
 		],
 		"subkey": {},
-		"modification": 1527582707253
+		"modification": 1528193080322
 	},
 	"tables": [
 		"viewConfig"

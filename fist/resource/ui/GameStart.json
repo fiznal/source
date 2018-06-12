@@ -1,0 +1,12 @@
+{
+	"groups":[{
+			"keys":"GameStart_json",
+			"name":"GameStart"
+		}],
+	"resources":[{
+			"name":"GameStart_json",
+			"subkeys":"bg,btn_setting,btn_start",
+			"type":"sheet",
+			"url":"ui/GameStart/GameStart.json"
+		}]
+}

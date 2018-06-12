@@ -14,7 +14,7 @@ var isEncrypt = false;
     /** 配置表ID是否全局唯一. */
     xls.isGlobal = false;
     /** 生成配置的时间戳. */
-    xls.createTimestamp = 1527586841364;
+    xls.createTimestamp = 1528193083499;
     /** 索引表最后修改的时间戳. */
     xls.modificationTimestamp = 1527582473136;
     /** 自定义加载器. */

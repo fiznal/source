@@ -9,6 +9,15 @@
   },
   "egret_version": "5.0.15",
   "template": {},
+  "eui": {
+      "exmlRoot": [
+      "resource/skin"
+      ],
+  "themes": [
+      "resource/default.thm.json"
+    ],
+  "exmlPublishPolicy": "commonjs"
+  },
   "modules": [
     {
       "name": "egret"

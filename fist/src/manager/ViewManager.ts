@@ -6,7 +6,7 @@ class ViewManager {
 
     public static setup(params:any, callBack:Function, thisObj:any):void
     {
-        alert(xls.viewConfig.getItem(1).viewName);
+        // alert(xls.viewConfig.getItem(1).viewName);
         this._viewHashMap = new HashMap();
         //加载所有面板信息
         // RES.getResByUrl("/resource/xls/json/cn/viewConfig.json", this.onLoadJson, this);
@@ -18,9 +18,12 @@ class ViewManager {
        
     }
 
-    public static openView(panelName:string, level:egret.Sprite):void
+    public static openView(panelID:number, params:any, level:egret.Sprite):void
     {
-        //读取json
         //获取面板消息
+        var baseViewContainer:BaseViewContainer = new BaseViewContainer();
+        baseViewContainer.setup(panelID, params, level);
+        this._viewHashMap.add(panelID, baseViewContainer);
+        level.addChild(baseViewContainer);
     }
 }

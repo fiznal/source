@@ -60,6 +60,9 @@ class Main extends egret.DisplayObjectContainer {
         egret.lifecycle.onResume = () => {
             egret.ticker.resume();
         }
+        let assetAdapter = new AssetAdapter();
+        egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
+        egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
         this.initManagers();
     }
 
@@ -78,10 +81,7 @@ class Main extends egret.DisplayObjectContainer {
     private onConfigComplete(event: RES.ResourceEvent): void {
         RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
-        RES.addEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
-        RES.loadGroup("preload");
+        RES.loadGroup("GameStart");
     }
 
     /**
@@ -89,14 +89,14 @@ class Main extends egret.DisplayObjectContainer {
      * Preload resource group is loaded
      */
     private onResourceLoadComplete(event: RES.ResourceEvent) {
-        if (event.groupName == "preload") {
-            this.stage.removeChild(this.loadingView);
+        if (event.groupName == "GameStart") {
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
-            RES.removeEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
-            this.createGameScene();
+            // var dd:any = RES.getRes("egret_icon_png");
+            // var pic:egret.Bitmap = new egret.Bitmap(dd);
+            // this.addChild(pic);
+            // this.createGameScene();
         }
+
     }
 
     /**
@@ -245,6 +245,8 @@ class Main extends egret.DisplayObjectContainer {
         this._params.push(null);
         this._managerList.push(ViewManager);
         this._params.push(null);
+        this._managerList.push(AnimationManager);
+        this._params.push(null);
         this.loadManagers();
     }
 
@@ -257,7 +259,11 @@ class Main extends egret.DisplayObjectContainer {
         }else
         {
              //显示初始化界面
-            RES.getResByUrl('/resource/system/logo.png', this.onLoadLogoComplete, this);
+            // RES.getResByUrl('/resource/system/logo.png', this.onLoadLogoComplete, this);
+            ViewManager.openView(1, null, LevelManager.app);
+            // RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+            // RES.loadConfig("resource/ui/GameStart.json","resource/");
+            // RES.loadConfig("resource/default.res.json" , "resource/");
         }
     }
 }

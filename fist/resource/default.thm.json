@@ -1,0 +1,9 @@
+{
+  "skins": {
+    "GameStart": "resource/skin/GameStart.exml"
+  },
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/skin/GameStart.exml"
+  ]
+}

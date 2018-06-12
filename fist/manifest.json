@@ -10,14 +10,19 @@
 		"promise/bin/promise.js"
 	],
 	"game": [
+		"bin-debug/views/BaseView.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
+		"bin-debug/ThemeAdapter.js",
 		"bin-debug/components/View.js",
 		"bin-debug/components/loading/LoadingCell.js",
 		"bin-debug/components/loading/LoadingComponent.js",
 		"bin-debug/const/LoadingType.js",
+		"bin-debug/event/AnimateLoadEvent.js",
 		"bin-debug/event/LoadingEvent.js",
-		"bin-debug/manager/EventManager.js",
+		"bin-debug/info/AnimateLoaderInfo.js",
+		"bin-debug/manager/AnimationManager.js",
+		"bin-debug/views/GameStart/GameStartView.js",
 		"bin-debug/manager/LevelManager.js",
 		"bin-debug/manager/ResourceManager.js",
 		"bin-debug/manager/ViewManager.js",
@@ -26,6 +31,9 @@
 		"bin-debug/typings/ITableAttributeInfo.js",
 		"bin-debug/typings/IViewConfig.js",
 		"bin-debug/typings/IViewConfigInfo.js",
-		"bin-debug/utils/HashMap.js"
+		"bin-debug/utils/HashMap.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/views/BaseViewContainer.js",
+		"bin-debug/manager/EventManager.js"
 	]
 }

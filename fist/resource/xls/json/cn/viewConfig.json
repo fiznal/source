@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"isExml": 1,
-		"viewName": "GameStartView"
+		"viewName": "GameStart",
+		"isExml": 1
 	}
 ]
